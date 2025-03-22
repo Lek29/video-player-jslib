@@ -8,11 +8,20 @@
     .player {
       width: 800px;
       height: 600px;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 2);
-      padding-up: 30px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.9);
+      display: flex;
+      flex-direction: column;
     }
+    .js-video-container {
+      flex-grow: 1;
+      background-color: black;
+      }
     .controls-panel {
       background: black;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
     }
     .control-button {
       width: 40px;
@@ -22,19 +31,23 @@
       color: white;
       background-color: transparent;
     }
+    .hidden {
+      display: none;
+    }
+
   </style>
 </head>
 <body>
 
   <div id="player" class="player">
-    <div class="js-video-container" style="width: 100%; height: 100%"></div>
+    <div class="js-video-container"></div>
 
     <div class="controls-panel">
       <!-- Кнопки управления -->
       <button class="js-play-button control-button">
         <i class="fa fa-play" aria-hidden="true"></i>
       </button>
-      <button class="js-pause-button hidden control-button">
+      <button class="js-pause-button control-button">
         <i class="fa fa-pause" aria-hidden="true"></i>
       </button>
     </div>
