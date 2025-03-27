@@ -92,3 +92,5 @@ JS код поставляется в виде одного файла `player.j
   <div class="js-progress-slider" style="background-color: red;">Прогресс</div>
 </div>
 ```
+## Адрес сайта с рабочим примером.
+https://lek29.github.io/video-player-jslib/
