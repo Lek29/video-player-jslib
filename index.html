@@ -5,6 +5,10 @@
   <title>Видеоплеер</title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <style>
+    .time-display {
+      font-family: roboto;
+      font-weight: 400;
+    }
     .player {
       width: 800px;
       height: 600px;
@@ -21,7 +25,10 @@
       height: 60px;
       display: flex;
       align-items: center;
-      padding: 2px;
+      padding: 1px;
+      font-family: 'Roboto';
+      font-weight: 400;
+      color: white;
     }
     .control-button {
       width: 35px;
@@ -34,9 +41,20 @@
     .flex-grow {
       flex-grow: 1;
     }
-
+    .progress-bar-container {
+      flex-grow: 1;
+      margin: 0 10px;
+      height: 8px;
+      background-color: #444;
+      border-radius: 4px;
+    }
 
   </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -44,6 +62,7 @@
     <div class="js-video-container"></div>
 
     <div class="controls-panel">
+
       <!-- Кнопки управления -->
       <button class="js-play-button control-button">
         <i class="fa fa-play fa-lg" aria-hidden="true"></i>
@@ -60,7 +79,17 @@
         <i class="fa fa-volume-up fa-lg" aria-hidden="true"></i>
       </button>
 
-      <div class="flex-grow"></div>
+      <!-- Бегунок -->
+
+      <span class="js-current-time"></span>
+
+      <div class="progress-bar-container">
+         <!-- Сюда позже добавится сама полоса прокрутки -->
+      </div>
+
+      <span class="js-duration"></span>
+
+<!--      <div class="flex-grow"></div>-->
 
       <button class="js-fullscreen-button control-button">
         <i class="fa fa-expand fa-lg" aria-hidden="true"></i>
