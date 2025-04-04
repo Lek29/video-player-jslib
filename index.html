@@ -50,6 +50,21 @@
       flex-grow: 1;
       margin: 0 10px;
     }
+    .outer-circle{
+      height: 13px;
+      width: 13px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .inner-circle{
+      height: 7px;
+      width: 7px;
+      background-color: red;
+      border-radius: 50%;
+    }
 
   </style>
 
@@ -83,13 +98,15 @@
 
       <!-- Бегунок -->
 
-
+      <div class="outer-circle">
+        <div class="inner-circle"></div>
+      </div>
 
       <div class="progress-group">
         <span class="js-current-time"></span>
         <div class="progress-bar-container">
            <!-- Сюда позже добавится сама полоса прокрутки -->
-           <div class="js-progress" style="background-color: grey; height: 8px; border-radius: 4px;">
+           <div class="js-progress" style="background-color: grey; height: 6px; border-radius: 4px;">
               <div class="js-progress-slider" style="background-color: red; height: 100%; width: 0%; border-radius: 4px;"></div>
            </div>
         </div>
