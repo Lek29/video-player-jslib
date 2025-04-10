@@ -30,7 +30,7 @@
       cursor: pointer;
       color: white;
       background-color: transparent;
-      margin: 0 3x;
+      margin: 0 3px;
     }
     .progress-group {
       display: flex;
