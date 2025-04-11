@@ -19,25 +19,27 @@
       display: flex;
       align-items: center;
       padding: 1px;
+      padding-top: 12px;
+      box-sizing: border-box;
       font-family: 'Roboto';
       font-weight: 400;
       color: white;
     }
     .control-button{
       width: 35px;
-      height: 1px;
+
       border-style: none;
       cursor: pointer;
       color: white;
       background-color: transparent;
-      margin: 0 3px;
+      margin: 4px 0px;
+      padding: 8px 1px;
     }
     .progress-group {
       display: flex;
       align-items: center;
       flex-grow: 1;
       margin: 0 10px;
-      margin-top: 15px;
     }
     .progress-bar-container {
       flex-grow: 1;
