@@ -68,7 +68,7 @@
       background-color: red;
       border-radius: 50%;
     }
-    .js-progress:hover .outer-circle{
+    .progress-bar:hover .outer-circle{
       opacity: 1;
       transition-timing-function: ease-out;
     }
